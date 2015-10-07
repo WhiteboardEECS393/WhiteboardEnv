@@ -21,6 +21,6 @@ If you do install any new packages through pip, make sure you replace the curren
 
 !!!IMPORTANT!!! Before starting the project's server in the vm, make sure to enter the whiteboard\_env (in the VM) and run "source bin/activate" This will activate the virtual environment and make sure that the right version of Python is being used and the proper packages are loaded.
 
-The server should be run with the command "python manage.py runserver.py 0.0.0.0:8000" so that any IP can connect to it.
+The server should be run with the command "python manage.py runserver 0.0.0.0:8000" so that any IP can connect to it.
 
 The virtual machine has port 8000 forwarded to your system's port 8080, so make sure when you run the project's test server, you run it on port 8000.

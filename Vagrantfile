@@ -73,10 +73,9 @@ Vagrant.configure(2) do |config|
     sudo su postgres -c "createuser -s vagrant; createdb vagrant"
 
     mkdir whiteboard_env
-    virtualenv -p $(which python3) whiteboard_env
-    cp -r whiteboard whiteboard_env
-    cd whiteboard_env
+    virtualenv -p $(which python3) whiteboard
+    cd whiteboard
     source ./bin/activate
-    pip install -r ./whiteboard/requirements.txt
+    pip install -r requirements.txt
   SHELL
 end
